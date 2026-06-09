@@ -1,16 +1,26 @@
-# React + Vite
+# Smart Task Manager Frontend (Days 37-38)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Built the frontend of the Smart Task Manager application using React and integrated it with the Spring Boot backend through REST APIs.
 
-Currently, two official plugins are available:
+## Topics Covered
+- React Setup with Vite
+- JSX & Components
+- Props and State
+- useState Hook
+- useEffect Hook
+- Fetch API
+- Spring Boot Integration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Reusable React Components
+- State Management with Hooks
+- API Data Fetching
+- Live Task Display
+- Frontend-Backend Communication
 
-## React Compiler
+## Technologies
+React, JavaScript, HTML, CSS, Vite, Fetch API, Spring Boot REST API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Outcome
+Successfully connected a React frontend with a Spring Boot backend and displayed live task data using REST API integration.
