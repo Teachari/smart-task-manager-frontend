@@ -1,26 +1,26 @@
-# Smart Task Manager Frontend (Days 37-38)
+# Smart Task Manager Frontend (Day 39-40)
 
 ## Overview
-Built the frontend of the Smart Task Manager application using React and integrated it with the Spring Boot backend through REST APIs.
+Enhanced the React frontend by implementing routing, authentication flow, protected pages, and responsive UI design.
 
 ## Topics Covered
-- React Setup with Vite
-- JSX & Components
-- Props and State
-- useState Hook
-- useEffect Hook
-- Fetch API
-- Spring Boot Integration
+- React Router
+- Navigation
+- Protected Routes
+- Authentication Flow
+- CSS Modules
+- Responsive Design
 
 ## Features
-- Reusable React Components
-- State Management with Hooks
-- API Data Fetching
-- Live Task Display
-- Frontend-Backend Communication
+- Multi-page React application
+- Route-based navigation
+- Protected dashboard access
+- Authentication-based routing
+- Modular CSS styling
+- Responsive and polished user interface
 
 ## Technologies
-React, JavaScript, HTML, CSS, Vite, Fetch API, Spring Boot REST API
+React, React Router, JavaScript, CSS Modules, HTML, Vite
 
 ## Outcome
-Successfully connected a React frontend with a Spring Boot backend and displayed live task data using REST API integration.
+Built a responsive multi-page React application with authentication flow and protected routes, improving user experience and application structure.
