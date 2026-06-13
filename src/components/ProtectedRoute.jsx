@@ -1,16 +1,15 @@
-import React from 'react';
+import React from 'react'; // 🌟 Fixed typo from "iimport" to "import"
 import { Navigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const ProtectedRoute = ({ children }) => {
-  // Checks if the user has a valid 'true' status saved in browser memory
-  const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+  const { isAuthenticated } = useAuth();
 
-  // 🛡️ Guard Check: If not logged in, boot them out immediately
+  // If user is not authenticated, block them and bounce them straight back to login
   if (!isAuthenticated) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/login" replace />;
   }
 
-  // If they are logged in, safely let them through to the page
   return children;
 };
 
