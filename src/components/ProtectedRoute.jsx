@@ -1,12 +1,16 @@
-import React from 'react'; // 🌟 Fixed typo from "iimport" to "import"
+import React from 'react';
 import { Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 const ProtectedRoute = ({ children }) => {
-  const { isAuthenticated } = useAuth();
+  const auth = useAuth();
 
-  // If user is not authenticated, block them and bounce them straight back to login
-  if (!isAuthenticated) {
+  // Safety check: if context isn't ready yet, show a loading message
+  if (!auth || auth.loading) {
+    return <div style={{ padding: '2rem', textAlign: 'center' }}>Verifying session...</div>;
+  }
+
+  if (!auth.user) {
     return <Navigate to="/login" replace />;
   }
 
